@@ -6,17 +6,15 @@ int main() {
     cout.tie(0);
     int n;
     cin >> n;
-    long long k = 0;
-    for(int i = 1; i <= n; i++){
-        k += i;
+    map<pair<string,string>,int> br;
+    string a, b;
+    for(int i = 0; i < n; i++){
+        cin >> a >> b;
+        br[{a,b}]++;
     }
-    for(long long i = 0; i < n - 1; i++){
-        long long x;
-        cin >> x;
-        k -= x;
+    for(auto p: br){
+        if(p.second)
     }
-    cout << k;
-
     return 0;
 
 }
