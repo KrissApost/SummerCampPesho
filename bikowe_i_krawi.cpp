@@ -42,10 +42,19 @@ int main() {
             }
         }
     }
+    int chilso = 7382;
     int b, k, x = v[0];
-    while(b != 4 || k != 0){
+    while(b != 4){
         x = v[0];
-        cout << "mislq 4e e " << x << endl;
+        int chilso1;
+        cout << "kakwo mislish 4e e 4isloto mi ";
+        cin >> chilso1;
+        cout << bik(chilso,chilso1) << " " << krawi(chilso,chilso1) << endl;
+        if(bik(chilso,chilso1) == 4){
+            cout << "POBEDI ME?! KAK?! Nqkoi den rewansh?";
+            return 0;
+        }
+        cout << "mislq 4e twoito e " << x << endl;
         cin >> b >> k;
         vector<int> vec;
         for(int i = 1; i < v.size(); i++){
@@ -54,6 +63,12 @@ int main() {
             }
         }
         v = vec;
+        if(v.size() == 0){
+            cout << "maikati imash greshka";
+        }
+    }
+    if(b == 4){
+        cout << "Easy botka pe4elq! Eto go i moeto 4islo " << chilso;
     }
     return 0;
 }
